@@ -1,7 +1,5 @@
 package com.lianjia.shenyanchao;
 
-import static org.junit.Assert.*;
-
 /**
  * @author shenyanchao
  * @since 2017-05-18 18:07
@@ -9,7 +7,6 @@ import static org.junit.Assert.*;
 public class HelloWorldTest {
 
     private HelloWorld helloWorld = new HelloWorld();
-
 
     @org.junit.Test
     public void hello() throws Exception {
