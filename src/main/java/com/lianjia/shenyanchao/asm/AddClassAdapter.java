@@ -4,7 +4,6 @@ import org.objectweb.asm.ClassAdapter;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.MethodVisitor;
 
-
 /**
  * @author shenyanchao
  * @since 2017-05-17 18:50
@@ -17,12 +16,12 @@ public class AddClassAdapter extends ClassAdapter {
         super(cv);
     }
 
-
     // 重写 visitMethod，访问到 "operation" 方法时，
     // 给出自定义 MethodVisitor，实际改写方法内容
+    @Override
     public MethodVisitor visitMethod(final int access, final String name,
                                      final String desc, final String signature, final String[] exceptions) {
-        MethodVisitor mv = cv.visitMethod(access, name, desc, signature,exceptions);
+        MethodVisitor mv = cv.visitMethod(access, name, desc, signature, exceptions);
         MethodVisitor wrappedMv = mv;
         if (mv != null) {
             // 对于 "operation" 方法

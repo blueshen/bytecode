@@ -9,12 +9,15 @@ import org.objectweb.asm.Opcodes;
  * @since 2017-05-17 18:56
  */
 public class AddMethodAdapter extends MethodAdapter {
+
     public AddMethodAdapter(MethodVisitor methodVisitor) {
         super(methodVisitor);
     }
 
+    @Override
     public void visitCode() {
         // 在"operation"方法首部插入对 System.out.println("Hello World!");
+
         visitFieldInsn(Opcodes.GETSTATIC, "java/lang/System", "out", "Ljava/io/PrintStream;");
         visitLdcInsn("Hello World!");
         visitMethodInsn(Opcodes.INVOKEVIRTUAL, "java/io/PrintStream", "println",

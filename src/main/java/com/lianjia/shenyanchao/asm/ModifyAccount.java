@@ -16,7 +16,7 @@ import org.objectweb.asm.ClassWriter;
 public class ModifyAccount {
 
     public static void main(String[] args) throws Exception {
-        ClassReader cr = new ClassReader("com.lianjia.shenyanchao.Account");
+        ClassReader cr = new ClassReader("com.lianjia.shenyanchao.asm.Account");
         ClassWriter cw = new ClassWriter(ClassWriter.COMPUTE_MAXS);
         ClassAdapter classAdapter = new AddClassAdapter(cw);
         cr.accept(classAdapter, ClassReader.SKIP_DEBUG);

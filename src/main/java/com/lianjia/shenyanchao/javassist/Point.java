@@ -1,4 +1,4 @@
-package com.lianjia.shenyanchao;
+package com.lianjia.shenyanchao.javassist;
 
 /**
  * @author shenyanchao

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -13,7 +13,12 @@
         <project.source.encoding>UTF-8</project.source.encoding>
         <jdk.version>1.7</jdk.version>
     </properties>
-
+    <repositories>
+        <repository>
+            <id>brace</id>
+            <url>https://dl.bintray.com/btraceio/maven</url>
+        </repository>
+    </repositories>
     <dependencies>
 
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
@@ -49,7 +54,7 @@
         <dependency>
             <groupId>com.sun.tools.btrace</groupId>
             <artifactId>btrace-client</artifactId>
-            <version>1.2.3</version>
+            <version>1.3.11.1</version>
         </dependency>
 
 

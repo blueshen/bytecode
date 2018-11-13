@@ -16,7 +16,7 @@ public class ModifyPoint {
 
     public static void main(String[] args) throws Exception {
         ClassPool pool = ClassPool.getDefault();
-        CtClass cc = pool.get("com.lianjia.shenyanchao.Point");
+        CtClass cc = pool.get("com.lianjia.shenyanchao.javassist.Point");
 
         CtField xField = cc.getDeclaredField("x");
         xField.setModifiers(Modifier.PRIVATE);
