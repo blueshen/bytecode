@@ -12,6 +12,8 @@ import com.sun.btrace.annotations.OnMethod;
 import com.sun.btrace.annotations.Return;
 
 /**
+ * 演示btrace使用
+ *
  * @author shenyanchao
  * @since 2017-05-18 19:58
  */
@@ -29,3 +31,15 @@ public class TraceEcho {
         BTraceUtils.println(strcat("result:", str(result)));
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+

@@ -7,7 +7,7 @@ package com.lianjia.shenyanchao;
 public class Bootstrap {
 
     public static void main(String[] args) {
-        String name = "shenyanchao";
+        String name = "Louis";
         greeting(name);
     }
 
